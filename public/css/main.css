@@ -1,0 +1,54 @@
+/*! url-shortener - v0.1.0 - 2013-09-22
+ * http://royriojas.com
+ * Copyright (c) 2013 - Roy Riojas */
+
+/*
+ KWL Base mixins
+*/
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: auto;
+}
+/*
+This assumes you have font-awesome properly included in your page to work
+*/
+/* \f020 doesn't work in Safari. all shifted one down */
+.main-container {
+  padding: 20px;
+  text-align: center;
+}
+.main-container .text-entry-chrome {
+  line-height: 50px;
+  font-size: 30px;
+  padding-top: 6px;
+  min-width: 500px;
+}
+.main-container .field.btns {
+  padding-top: 50px;
+}
+.main-container a.button {
+  font-size: 25px;
+  line-height: 45px;
+}
